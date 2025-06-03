@@ -61,5 +61,51 @@ header {
 
 .theme-basket-profile-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.theme-store {
+  color: aliceblue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+
+  &:hover {
+    border-radius: 5px;
+    background-color: rgb(10, 230, 230);
+    transition: background-color 0.3s ease;
+  }
+}
+
+.basket-btn {
+  color: aliceblue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+
+  &:hover {
+    border-radius: 5px;
+    background-color: rgb(10, 230, 230);
+    transition: background-color 0.3s ease;
+  }
+}
+
+.profile-btn {
+  padding: 3px;
+  color: aliceblue;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+
+  &:hover {
+    border-radius: 5px;
+    background-color: rgb(10, 230, 230);
+    transition: background-color 0.3s ease;
+  }
 }
