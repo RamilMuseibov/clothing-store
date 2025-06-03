@@ -5,10 +5,97 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite + TS</title>
+    <link rel="icon" href="/images/Shop.png" sizes="16" type="image/png" />
+    <title>Tip Tops store</title>
   </head>
   <body>
-    <div id="rootContainer"></div>
+    <header>
+      <h1 class="store-title">!Tip Tops!</h1>
+
+      <div class="sorted-container">
+        <input
+          id="productSerarch"
+          class="product-search"
+          type="text"
+          placeholder="Search product..."
+        />
+
+        <select id="postSelect" class="post-select">
+          <option value="1">Electronic</option>
+          <option value="2">Electronics</option>
+          <option value="3">Furniture</option>
+          <option value="4">Shoes</option>
+          <option value="5">Miscellaneous</option>
+          <option value="6">Pets</option>
+          <option value="7">Grosery</option>
+          <option value="8">Computer Category</option>
+        </select>
+      </div>
+
+      <div class="theme-basket-profile-container">
+        <button id="themeStore" class="theme-store">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-moon-icon lucide-moon"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+
+        <button id="basketProducts" class="basket-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+        </button>
+        <button id="profile" class="profile-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-user-round-icon lucide-circle-user-round"
+          >
+            <path d="M18 20a6 6 0 0 0-12 0" />
+            <circle cx="12" cy="10" r="4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="rootContainer"></div>
+    </main>
+
+    <footer></footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
